@@ -9752,6 +9752,11 @@ transition: all 0.3s cubic-bezier(.25,.8,.25,1);
     background: #8D1328;
     color:#fff;
   }
+
+  a{
+    color:#8D1328 !important;
+    text-decoration: none !important;
+  }
 .stepwizard-step p {
   margin-top: 0px;
   color:#666;

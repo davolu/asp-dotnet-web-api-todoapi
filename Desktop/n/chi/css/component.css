@@ -3,7 +3,7 @@
 	position: relative;
 	width: 100%;
 	height: 100%;
-	color: #fff;
+	color: rgba(0,0,0,0.4);
 }
 
 .overview .fs-form-wrap {
@@ -51,7 +51,7 @@
 	padding: 2.5em 30% 6em;
 	width: 100%;
 	height: 100%;
-	background: #fffed8;
+	background: #ffffff;
 	color: #3b3f45;
 	font-size: 1.2em;
 }
@@ -144,8 +144,7 @@ button.fs-continue,
 }
 
 .fs-form-overview ol {
-	max-width: ;
-}
+ }
 
 .fs-fields > li {
 	position: relative;
@@ -180,6 +179,7 @@ button.fs-continue,
 	display: inline-block;
 	padding: 0 5px 1em 0;
 	font-weight: 700;
+	color:#f5f5f5 !important;
 	pointer-events: none;
 }
 
@@ -244,7 +244,7 @@ button.fs-continue,
 	border: none;
 	border-bottom: 2px solid rgba(0,0,0,0.2);
 	background-color: transparent;
-	color: #fffed8;
+	color: #ffffff;
 	text-overflow: ellipsis;
 	font-weight: bold;
 	font-size: 1.5em;
@@ -272,7 +272,7 @@ button.fs-continue,
 }
 
 .fs-form-overview .fs-fields input:focus {
-	background-color: #fffed8; /* Fixes chrome bug with placeholder */
+	background-color: #ffffff; /* Fixes chrome bug with placeholder */
 }
 
 .fs-form-overview .fs-fields input {
@@ -361,7 +361,7 @@ button.fs-continue,
 }
 
 .fs-fields .fs-radio-custom input[type="radio"]:checked + label {
-	color: #fffed8;
+	color: #ffffff;
 }
 
 .fs-form-overview .fs-fields .fs-radio-custom input[type="radio"]:checked + label {
@@ -374,7 +374,7 @@ button.fs-continue,
 	height: 200px;
 	border: 2px solid rgba(0,0,0,0.2);
 	background-color: transparent;
-	color: #fffed8;
+	color: #ffffff;
 	font-weight: 700;
 	font-size: 0.85em;
 	resize: none;
@@ -395,7 +395,7 @@ button.fs-continue,
 }
 
 .fs-form-overview .fs-fields textarea:focus {
-	background: #fffed8;
+	background: #ffffff;
 }
 
 .fs-form div.cs-select.cs-skin-boxes {
@@ -515,7 +515,7 @@ button.fs-continue,
 	top: 0;
 	width: 0%;
 	height: 0.5em;
-	background: #fffed8;
+	background: #ffffff;
 	-webkit-transition: width 0.3s ease-in-out;
 	transition: width 0.3s ease-in-out;
 }
@@ -625,7 +625,7 @@ button.fs-continue,
 button.fs-submit,
 button.fs-continue {
 	padding: 0.6em 1.5em;
-	border: 3px solid #232529;
+	border: 3px solid #8D1328;
 	border-radius: 40px;
 	font-weight: 700;
 	color: rgba(0,0,0,0.4);
@@ -638,8 +638,8 @@ button.fs-continue {
 }
 
 .fs-form-overview .fs-submit {
-	border-color: #232529;
-	color: #232529;
+	border-color: #8D1328;
+	color: #8D1328;
 }
 
 button.fs-continue {
@@ -653,7 +653,7 @@ button.fs-continue {
 button.fs-submit:hover,
 button.fs-submit:focus,
 button.fs-continue:hover {
-	background: #232529;
+	background: #8D1328;
 	color: #fff;
 }
 

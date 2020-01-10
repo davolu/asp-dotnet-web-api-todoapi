@@ -58,7 +58,7 @@
 })(jQuery); // End of use strict
 
 
-/*
+
 
 $(document).ready(function () {
 
@@ -103,7 +103,7 @@ $(document).ready(function () {
   $('div.setup-panel div a.btn-success').trigger('click');
 });
 
-*/
+
 
 $.fn.upform = function() {
   var $this = $(this);
