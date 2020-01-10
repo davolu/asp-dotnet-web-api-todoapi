@@ -37,6 +37,11 @@
  .small-text{
      font-size: 16px !important;
  }
+
+ .has-error .form-control{
+   border-width: 1px;
+   border-color: #8D1328 !important;
+}
   </style>
 
 </head>
@@ -88,7 +93,7 @@
         </div>
 
 
-        <div class="col-md-8 col-xs-12 col-sm-12 card">
+        <div class="col-md-8 col-xs-12 col-sm-12 card" style="height:auto !Important;">
 
             <!--STEP WIZARD-->
 
@@ -97,57 +102,143 @@
                     <div class="stepwizard-row setup-panel">
                         <div class="stepwizard-step col-xs-3"> 
                             <a href="#step-1" type="button" class="btn btn-success btn-circle">1</a>
-                            <p><small>Shipper</small></p>
+                            <p><small></small></p>
                         </div>
-                        <div class="stepwizard-step col-xs-3"> 
+                    <div class="stepwizard-step col-xs-3"> 
                             <a href="#step-2" type="button" class="btn btn-default btn-circle" disabled="disabled">2</a>
-                            <p><small>Destination</small></p>
+                            <p><small></small></p>
                         </div>
-                        <div class="stepwizard-step col-xs-3"> 
+                        <!--    <div class="stepwizard-step col-xs-3"> 
                             <a href="#step-3" type="button" class="btn btn-default btn-circle" disabled="disabled">3</a>
                             <p><small>Schedule</small></p>
                         </div>
                         <div class="stepwizard-step col-xs-3"> 
                             <a href="#step-4" type="button" class="btn btn-default btn-circle" disabled="disabled">4</a>
                             <p><small>Cargo</small></p>
-                        </div>
+                        </div>-->
                     </div>
                 </div>
                 
                 <form role="form">
                     <div class="panel panel-primary setup-content" id="step-1">
                         <div class="panel-heading">
-                             <h3 class="panel-title">Shipper</h3>
+                             <h3 class="panel-title"></h3>
                         </div>
-                        <div class="panel-body">
-                            <div class="form-group">
-                                <label class="control-label">First Name</label>
-                                <input maxlength="100" type="text" required="required" class="form-control" placeholder="Enter First Name" />
+                        <div class="panel-body row">
+                            <div class="form-group col-md-6">
+                                <label class="control-label">Policy Number</label>
+                                <input maxlength="100" type="text"
+                                 required="required" class="form-control"
+                                  placeholder="" />
                             </div>
-                            <div class="form-group">
-                                <label class="control-label">Last Name</label>
-                                <input maxlength="100" type="text" required="required" class="form-control" placeholder="Enter Last Name" />
+                            <div class="form-group  col-md-6">
+                                <label class="control-label">Claim No</label>
+                                <input maxlength="100" type="text"
+                                 required="required" class="form-control"
+                                  placeholder="" />
                             </div>
-                            <button class="btn btn-primary nextBtn pull-right" type="button">Next</button>
-                        </div>
+                            <div class="form-group  col-md-6">
+                                <label class="control-label">Name of Insured</label>
+                                <input maxlength="100" type="text"
+                                 required="required" class="form-control"
+                                  placeholder="" />
+                            </div>
+
+                            <div class="form-group  col-md-6">
+                                <label class="control-label">Address</label>
+                                <input maxlength="100" type="text"
+                                 required="required" class="form-control"
+                                  placeholder="" />
+                            </div>
+
+
+                            <div class="form-group  col-md-6">
+                                <label class="control-label">Name of Defaulter</label>
+                                <input maxlength="100" type="text"
+                                 required="required" class="form-control"
+                                  placeholder="" />
+                            </div>
+
+
+                            <div class="form-group  col-md-6">
+                                <label class="control-label">Age</label>
+                                <input maxlength="100" type="text"
+                                 required="required" class="form-control"
+                                  placeholder="" />
+                            </div>
+
+                           
+
+
+                            <div class="form-group  col-md-6">
+                                <label class="control-label">Occupation at the date of the default</label>
+                                <input maxlength="100" type="text"
+                                 required="required" class="form-control"
+                                  placeholder="" />
+                            </div>
+
+                            <div class="form-group  col-md-6">
+                                <label class="control-label">Present Address</label>
+                                <input maxlength="100" type="text"
+                                 required="required" class="form-control"
+                                  placeholder="" />
+                            </div>
+
+                            
+
+                            <div class="col-md-12 pull-right">
+                                <button class="btn btn-bogundi nextBtn pull-right" type="button">Next</button>
+
+
+                            </div>
+
+                         </div>
                     </div>
+                   
                     
                     <div class="panel panel-primary setup-content" id="step-2">
                         <div class="panel-heading">
-                             <h3 class="panel-title">Destination</h3>
+                             <h3 class="panel-title"></h3>
                         </div>
-                        <div class="panel-body">
-                            <div class="form-group">
-                                <label class="control-label">Company Name</label>
-                                <input maxlength="200" type="text" required="required" class="form-control" placeholder="Enter Company Name" />
+                        <div class="panel-body row">
+                            <div class="form-group col-md-12">
+                                <label class="control-label">For how long and in what manner, has the default been carried on and
+                                    concealed?</label>
+                                <input maxlength="200" type="text" required="required" 
+                                class="form-control" placeholder="" />
                             </div>
-                            <div class="form-group">
-                                <label class="control-label">Company Address</label>
-                                <input maxlength="200" type="text" required="required" class="form-control" placeholder="Enter Company Address" />
+                            <div class="form-group col-md-6">
+                                <label class="control-label">What led to its discovery?</label>
+                                <input maxlength="200" type="text" required="required"
+                                 class="form-control" placeholder="" />
                             </div>
-                            <button class="btn btn-primary nextBtn pull-right" type="button">Next</button>
+
+                            <div class="form-group col-md-6">
+                                <label class="control-label">What is the amount of default as at present ascertained:</label>
+                                <input maxlength="200" type="text" required="required"
+                                 class="form-control" placeholder="" />
+                            </div>
+                            
+
+                            <div class="form-group col-md-6">
+                                <label class="control-label">What is the amount of default as at present ascertained:</label>
+                                <input maxlength="200" type="text" required="required"
+                                 class="form-control" placeholder="" />
+                            </div>
+
+                            <div class="form-group col-md-6">
+                                <label class="control-label">Has there been any previous irregularity in the defaulters accounts? if so, state
+                                    when, and give particulars:</label>
+                                <input maxlength="200" type="text" required="required"
+                                 class="form-control" placeholder="" />
+                            </div>
+
+
+                            <button class="btn btn-primary btn-bogundi  nextBtn pull-right" type="button">Next</button>
                         </div>
                     </div>
+
+                    <!--
                     
                     <div class="panel panel-primary setup-content" id="step-3">
                         <div class="panel-heading">
@@ -182,6 +273,8 @@
                             <button class="btn btn-success pull-right" type="submit">Finish!</button>
                         </div>
                     </div>
+
+                -->
                 </form>
             </div>
 
