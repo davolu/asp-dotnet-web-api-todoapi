@@ -48,7 +48,7 @@
 }
 
 html {
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -60,7 +60,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
   margin: 0;
-  font-family: "Merriweather", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: 'Roboto', sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -187,7 +187,7 @@ pre,
 code,
 kbd,
 samp {
-  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-family: 'Roboto', sans-serif;
   font-size: 1em;
 }
 
@@ -368,7 +368,7 @@ template {
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: 0.5rem;
-  font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   line-height: 1.2;
   color:#8D1328;
@@ -2324,15 +2324,20 @@ fieldset:disabled a.btn {
 }
 
 .btn-success {
-  color: #fff;
-  background-color: #28a745;
-  border-color: #28a745;
+  color: #fff !important;
+  background-color: #7a7a7a;
+  border-color: #7a7a7a;
+
+  
 }
 
+.btn-circle {
+  color:#fff;
+}
 .btn-success:hover {
   color: #fff;
-  background-color: #218838;
-  border-color: #1e7e34;
+  background-color:#8D1328;
+  border-color: #8D1328;
 }
 
 .btn-success:focus, .btn-success.focus {
@@ -5660,7 +5665,7 @@ a.close.disabled {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: "Merriweather", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -5773,7 +5778,7 @@ a.close.disabled {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  font-family: "Merriweather", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -7294,7 +7299,8 @@ button.bg-dark:focus {
 }
 
 .fixed-top {
-  position: fixed;
+ /* position: fixed;*/
+ padding-bottom:0px;
   top: 0;
   right: 0;
   left: 0;
@@ -9243,7 +9249,7 @@ button.bg-dark:focus {
 }
 
 .text-monospace {
-  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
+  font-family: 'Roboto', sans-serif;
 }
 
 .text-justify {
@@ -9573,7 +9579,7 @@ hr.light {
 }
 
 .btn {
-  font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: 'Roboto', sans-serif;
 }
 
 .btn-xl {
@@ -9596,14 +9602,14 @@ hr.light {
 }
 
 #mainNav .navbar-brand {
-  font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: 'Roboto', sans-serif;
   font-weight: 700;
   color: #212529;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
   color: #6c757d;
-  font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 0.9rem;
   padding: 0.75rem 0;
@@ -9720,7 +9726,7 @@ header.masthead h1 {
 }
 
 #portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-category {
-  font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: 'Roboto', sans-serif;
   font-size: 0.85rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -9750,6 +9756,8 @@ transition: all 0.3s cubic-bezier(.25,.8,.25,1);
  
   .btn-bogundi{
     background: #8D1328;
+    border-color: #8D1328 !important;
+    border-radius: 10px !important;
     color:#fff;
   }
 
@@ -9778,7 +9786,7 @@ transition: all 0.3s cubic-bezier(.25,.8,.25,1);
   color:#bbb;
 }
 .stepwizard-row:before {
-  top: 14px;
+  top: 30px;
   bottom: 0;
   position: absolute;
   content:" ";
@@ -9793,13 +9801,16 @@ transition: all 0.3s cubic-bezier(.25,.8,.25,1);
   position: relative;
 }
 .btn-circle {
-  width: 30px;
-  height: 30px;
+  width: 60px;
+  height: 60px;
   text-align: center;
-  padding: 6px 0;
+   padding-left:23px !important; 
+   padding-top:15px !important;
   font-size: 12px;
   line-height: 1.428571429;
-  border-radius: 15px;
+  border-radius: 30px !important;
+
+ 
 }
 
 
@@ -9888,7 +9899,7 @@ input[type="radio"].toggle:checked + label:after {
   color: #7A7A7A;
 }
 .upform {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
   -webkit-touch-callout: none; /* iOS Safari */
   -webkit-user-select: none; /* Safari */
   -khtml-user-select: none; /* Konqueror HTML */
@@ -9940,3 +9951,375 @@ input[type="radio"].toggle:checked + label:after {
 }
  
 /* UPFORM STYLE ENDS*/
+
+
+
+/* Minimialist Form Designs
+*/
+input {
+  background: #fff;
+  color: #525865;
+  border-radius: 4px;
+  border: 1px solid #d1d1d1;
+  box-shadow: inset 1px 2px 8px rgba(0, 0, 0, 0.07);
+  font-family: inherit;
+  font-size: 1em;
+  line-height: 1.45;
+  outline: none;
+  padding: 0.6em 1.45em 0.7em;
+  -webkit-transition: .18s ease-out;
+  -moz-transition: .18s ease-out;
+  -o-transition: .18s ease-out;
+  transition: .18s ease-out;
+}
+input:hover {
+  box-shadow: inset 1px 2px 8px rgba(0, 0, 0, 0.02);
+}
+input:focus {
+  color: #4b515d;
+  border: 1px solid #B8B6B6;
+  box-shadow: inset 1px 2px 4px rgba(0, 0, 0, 0.01), 0px 0px 8px rgba(0, 0, 0, 0.2);
+}
+
+ input{
+   border-radius:20px !important;
+   outline: none !important;
+ }
+
+ .control-label{
+   color:#000 !important;
+ }
+ .nextBtn{
+  margin-left:90%;
+ }
+
+ /*font Variables*/
+/*Color Variables*/
+@import url("https://fonts.googleapis.com/css?family=Roboto:300i,400,400i,500,700,900");
+.multi_step_form {
+  background: #f6f9fb;
+  display: block;
+  overflow: hidden;
+}
+.multi_step_form #msform {
+  text-align: center;
+  position: relative;
+  padding-top: 50px;
+  min-height: 820px;
+  max-width: 810px;
+  margin: 0 auto;
+  background: #ffffff;
+  z-index: 1;
+}
+.multi_step_form #msform .tittle {
+  text-align: center;
+  padding-bottom: 55px;
+}
+.multi_step_form #msform .tittle h2 {
+  font: 500 24px/35px "Roboto", sans-serif;
+  color: #3f4553;
+  padding-bottom: 5px;
+}
+.multi_step_form #msform .tittle p {
+  font: 400 16px/28px "Roboto", sans-serif;
+  color: #5f6771;
+}
+.multi_step_form #msform fieldset {
+  border: 0;
+  padding: 20px 105px 0;
+  position: relative;
+  width: 100%;
+  left: 0;
+  right: 0;
+}
+.multi_step_form #msform fieldset:not(:first-of-type) {
+  display: none;
+}
+.multi_step_form #msform fieldset h3 {
+  font: 500 18px/35px "Roboto", sans-serif;
+  color: #3f4553;
+}
+.multi_step_form #msform fieldset h6 {
+  font: 400 15px/28px "Roboto", sans-serif;
+  color: #5f6771;
+  padding-bottom: 30px;
+}
+.multi_step_form #msform fieldset .intl-tel-input {
+  display: block;
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  outline: none;
+}
+.multi_step_form #msform fieldset .intl-tel-input .flag-container .selected-flag {
+  padding: 0 20px;
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  outline: none;
+  width: 65px;
+}
+.multi_step_form #msform fieldset .intl-tel-input .flag-container .selected-flag .iti-arrow {
+  border: 0;
+}
+.multi_step_form #msform fieldset .intl-tel-input .flag-container .selected-flag .iti-arrow:after {
+  content: "\f35f";
+  position: absolute;
+  top: 0;
+  right: 0;
+  font: normal normal normal 24px/7px Ionicons;
+  color: #5f6771;
+}
+.multi_step_form #msform fieldset #phone {
+  padding-left: 80px;
+}
+.multi_step_form #msform fieldset .form-group {
+  padding: 0 10px;
+}
+.multi_step_form #msform fieldset .fg_2, .multi_step_form #msform fieldset .fg_3 {
+  padding-top: 10px;
+  display: block;
+  overflow: hidden;
+}
+.multi_step_form #msform fieldset .fg_3 {
+  padding-bottom: 70px;
+}
+.multi_step_form #msform fieldset .form-control, .multi_step_form #msform fieldset .product_select {
+  border-radius: 3px;
+  border: 1px solid #d8e1e7;
+  padding: 0 20px;
+  height: auto;
+  font: 400 15px/48px "Roboto", sans-serif;
+  color: #5f6771;
+  box-shadow: none;
+  outline: none;
+  width: 100%;
+}
+.multi_step_form #msform fieldset .form-control.placeholder, .multi_step_form #msform fieldset .product_select.placeholder {
+  color: #5f6771;
+}
+.multi_step_form #msform fieldset .form-control:-moz-placeholder, .multi_step_form #msform fieldset .product_select:-moz-placeholder {
+  color: #5f6771;
+}
+.multi_step_form #msform fieldset .form-control::-moz-placeholder, .multi_step_form #msform fieldset .product_select::-moz-placeholder {
+  color: #5f6771;
+}
+.multi_step_form #msform fieldset .form-control::-webkit-input-placeholder, .multi_step_form #msform fieldset .product_select::-webkit-input-placeholder {
+  color: #5f6771;
+}
+.multi_step_form #msform fieldset .form-control:hover, .multi_step_form #msform fieldset .form-control:focus, .multi_step_form #msform fieldset .product_select:hover, .multi_step_form #msform fieldset .product_select:focus {
+  border-color: #8;
+}
+.multi_step_form #msform fieldset .form-control:focus.placeholder, .multi_step_form #msform fieldset .product_select:focus.placeholder {
+  color: transparent;
+}
+.multi_step_form #msform fieldset .form-control:focus:-moz-placeholder, .multi_step_form #msform fieldset .product_select:focus:-moz-placeholder {
+  color: transparent;
+}
+.multi_step_form #msform fieldset .form-control:focus::-moz-placeholder, .multi_step_form #msform fieldset .product_select:focus::-moz-placeholder {
+  color: transparent;
+}
+.multi_step_form #msform fieldset .form-control:focus::-webkit-input-placeholder, .multi_step_form #msform fieldset .product_select:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+.multi_step_form #msform fieldset .product_select:after {
+  display: none;
+}
+.multi_step_form #msform fieldset .product_select:before {
+  content: "\f35f";
+  position: absolute;
+  top: 0;
+  right: 20px;
+  font: normal normal normal 24px/48px Ionicons;
+  color: #5f6771;
+}
+.multi_step_form #msform fieldset .product_select .list {
+  width: 100%;
+}
+.multi_step_form #msform fieldset .done_text {
+  padding-top: 40px;
+}
+.multi_step_form #msform fieldset .done_text .don_icon {
+  height: 36px;
+  width: 36px;
+  line-height: 36px;
+  font-size: 22px;
+  margin-bottom: 10px;
+  background: #8;
+  display: inline-block;
+  border-radius: 50%;
+  color: #ffffff;
+  text-align: center;
+}
+.multi_step_form #msform fieldset .done_text h6 {
+  line-height: 23px;
+}
+.multi_step_form #msform fieldset .code_group {
+  margin-bottom: 60px;
+}
+.multi_step_form #msform fieldset .code_group .form-control {
+  border: 0;
+  border-bottom: 1px solid #a1a7ac;
+  border-radius: 0;
+  display: inline-block;
+  width: 30px;
+  font-size: 30px;
+  color: #5f6771;
+  padding: 0;
+  margin-right: 7px;
+  text-align: center;
+  line-height: 1;
+}
+.multi_step_form #msform fieldset .passport {
+  margin-top: -10px;
+  padding-bottom: 30px;
+  position: relative;
+}
+.multi_step_form #msform fieldset .passport .don_icon {
+  height: 36px;
+  width: 36px;
+  line-height: 36px;
+  font-size: 22px;
+  position: absolute;
+  top: 4px;
+  right: 0;
+  background: #5cb85c;
+  display: inline-block;
+  border-radius: 50%;
+  color: #ffffff;
+  text-align: center;
+}
+.multi_step_form #msform fieldset .passport h4 {
+  font: 500 15px/23px "Roboto", sans-serif;
+  color: #5f6771;
+  padding: 0;
+}
+.multi_step_form #msform fieldset .input-group {
+  padding-bottom: 40px;
+}
+.multi_step_form #msform fieldset .input-group .custom-file {
+  width: 100%;
+  height: auto;
+}
+.multi_step_form #msform fieldset .input-group .custom-file .custom-file-label {
+  width: 168px;
+  border-radius: 5px;
+  cursor: pointer;
+  font: 700 14px/40px "Roboto", sans-serif;
+  border: 1px solid #99a2a8;
+  text-align: center;
+  transition: all 300ms linear 0s;
+  color: #5f6771;
+}
+.multi_step_form #msform fieldset .input-group .custom-file .custom-file-label i {
+  font-size: 20px;
+  padding-right: 10px;
+}
+.multi_step_form #msform fieldset .input-group .custom-file .custom-file-label:hover, .multi_step_form #msform fieldset .input-group .custom-file .custom-file-label:focus {
+  background: #5cb85c;
+  border-color: #5cb85c;
+  color: #fff;
+}
+.multi_step_form #msform fieldset .input-group .custom-file input {
+  display: none;
+}
+.multi_step_form #msform fieldset .file_added {
+  text-align: left;
+  padding-left: 190px;
+  padding-bottom: 60px;
+}
+.multi_step_form #msform fieldset .file_added li {
+  font: 400 15px/28px "Roboto", sans-serif;
+  color: #5f6771;
+}
+.multi_step_form #msform fieldset .file_added li a {
+  color: #5cb85c;
+  font-weight: 500;
+  display: inline-block;
+  position: relative;
+  padding-left: 15px;
+}
+.multi_step_form #msform fieldset .file_added li a i {
+  font-size: 22px;
+  padding-right: 8px;
+  position: absolute;
+  left: 0;
+  transform: rotate(20deg);
+}
+.multi_step_form #msform #progressbar {
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+.multi_step_form #msform #progressbar li {
+  list-style-type: none;
+  color: #99a2a8;
+  font-size: 9px;
+  width: calc(100%/3);
+  float: left;
+  position: relative;
+  font: 500 13px/1 "Roboto", sans-serif;
+}
+.multi_step_form #msform #progressbar li:nth-child(2):before {
+  content: "\f12f";
+}
+.multi_step_form #msform #progressbar li:nth-child(3):before {
+  content: "\f457";
+}
+.multi_step_form #msform #progressbar li:before {
+  content: "\f1fa";
+  font: normal normal normal 30px/50px Ionicons;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  display: block;
+  background: #eaf0f4;
+  border-radius: 50%;
+  margin: 0 auto 10px auto;
+}
+.multi_step_form #msform #progressbar li:after {
+  content: '';
+  width: 100%;
+  height: 10px;
+  background: #eaf0f4;
+  position: absolute;
+  left: -50%;
+  top: 21px;
+  z-index: -1;
+}
+.multi_step_form #msform #progressbar li:last-child:after {
+  width: 150%;
+}
+.multi_step_form #msform #progressbar li.active {
+  color: #5cb85c;
+}
+.multi_step_form #msform #progressbar li.active:before, .multi_step_form #msform #progressbar li.active:after {
+  background: #5cb85c;
+  color: white;
+}
+.multi_step_form #msform .action-button {
+  background: #5cb85c;
+  color: white;
+  border: 0 none;
+  border-radius: 5px;
+  cursor: pointer;
+  min-width: 130px;
+  font: 700 14px/40px "Roboto", sans-serif;
+  border: 1px solid #5cb85c;
+  margin: 0 5px;
+  text-transform: uppercase;
+  display: inline-block;
+}
+.multi_step_form #msform .action-button:hover, .multi_step_form #msform .action-button:focus {
+  background: #405867;
+  border-color: #405867;
+}
+.multi_step_form #msform .previous_button {
+  background: transparent;
+  color: #99a2a8;
+  border-color: #99a2a8;
+}
+.multi_step_form #msform .previous_button:hover, .multi_step_form #msform .previous_button:focus {
+  background: #405867;
+  border-color: #405867;
+  color: #fff;
+}
