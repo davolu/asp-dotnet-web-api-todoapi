@@ -12,6 +12,7 @@
 
  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
+ <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet" />
 
 </head>
@@ -68,14 +69,14 @@
                 </div> 
 
                 <div class="form-group col-md-6"> 
-                        <label>Name of Insured</label>
+                        <label>Name of the Defaulter</label>
                       <input type="text" class="form-control" placeholder="">
                     </div> 
 
 
 
                 <div class="form-group col-md-6"> 
-                        <label>Address</label>
+                        <label>Age of Defaulter</label>
                       <input type="text" class="form-control" placeholder="">
                     </div> 
 
@@ -87,18 +88,18 @@
                     </div> 
 
                     <div class="form-group col-md-6"> 
-                            <label>Age</label>
+                            <label>Age of Defaulter </label>
                           <input type="text" class="form-control" placeholder="">
                         </div> 
 
 
                         <div class="form-group col-md-6"> 
-                                <label>Occupation at the date of the default</label>
+                                <label>Address of Defaulter</label>
                               <input type="text" class="form-control" placeholder="">
                             </div> 
 
                             <div class="form-group col-md-6"> 
-                                    <label>Present Address</label>
+                                    <label>Occupation Of Defaulter</label>
                                   <input type="text" class="form-control" placeholder="">
                                 </div> 
 
@@ -115,52 +116,59 @@
           <fieldset>
                 <div class="form-row text-left"> 
                 
-                        <div class="form-group  col-md-12"> 
-                            <label>For how long and in what manner, has the default been carried on and
-                                    concealed?</label>
-                          <input type="text" class="form-control" placeholder="">
-                        </div> 
-        
-                        <div class="form-group  col-md-12"> 
-                                <label>What led to its discovery?</label>
-                              <input type="text" class="form-control" placeholder="">
-                            </div> 
-        
-                            <div class="form-group  col-md-12"> 
-                                    <label>What is the amount of default as at present ascertained:</label>
-                                  <input type="text" class="form-control" placeholder="">
-                                </div> 
-            
-                                <div class="form-group  col-md-12"> 
-                                        <label>Has there been any previous irregularity in the defaulters accounts? if so, state
-                                                when, and give particulars:</label>
-                                      <input type="text" class="form-control" placeholder="">
-                                    </div> 
-        
-        
-
-                        <div class="form-group  col-md-12"> 
-                                <label>On what date were his accounts last checked and found correct? </label>
-                              <input type="text" class="form-control" placeholder="">
-                            </div> 
-            
-     
-                     
-                            <div class="form-group  col-md-12"> 
-                                <label>Has he, so far as you know, any property, furniture or other affects?</label>
-                              <input type="text" class="form-control" placeholder="">
-                            </div> 
+                        
+                  
+                  <div class="form-group col-md-6"> 
+                    <label>Length Of Default</label>
+                  <input type="text" class="form-control" placeholder="">
+                </div> 
 
 
-                        <div class="form-group  col-md-12"> 
-                                <label>  </label>
-                              <input type="text" class="form-control" placeholder="">
-                            </div> 
+                   
+                <div class="form-group col-md-6"> 
+                  <label>How was the default discovered?</label>
+                <input type="text" class="form-control" placeholder="">
+              </div> 
 
-                            <div class="form-group  col-md-12"> 
-                                    <label> Do You Hold Any Other Security In Addition To This Guarantee? </label>
-                                  <input type="text" class="form-control" placeholder="">
-                                </div>
+
+                                 
+              <div class="form-group col-md-6"> 
+                <label>Amount of Default (N)</label>
+              <input type="number" class="form-control" placeholder="">
+            </div> 
+
+
+            <div class="form-group col-md-6"> 
+              <label> Does the defaulter have an irregularity history ? 
+              </label>
+          
+                              
+              <div class="flavor">
+                <input type="radio" id="radio_1" name="DefaulterHasIrregularityHistory" value="Yes" />
+                <label for="radio_1" class="option11">Yes</label>
+                 
+                
+                <input type="radio" id="radio_2" name="DefaulterHasIrregularityHistory" value="No" />
+                <label for="radio_2" class="option13">No</label>
+              </div>
+              
+             
+              
+         </div> 
+
+
+         <div class="form-group col-md-6"> 
+          <label>Irregularity in particulars</label>
+        <input type="text" class="form-control" placeholder="">
+      </div> 
+
+      <div class="form-group col-md-6"> 
+        <label>Last date of defaulter correct account ?</label>
+      <input type="text" class="form-control" placeholder="">
+    </div> 
+
+
+
 
 
                 </div>  
@@ -177,16 +185,114 @@
                 <div class="form-row text-left"> 
                  
  
+ 
+                  <div class="form-group col-md-12"> 
+                    <label> Does the defaulter defaulter have Properties ? 
+                    </label>
+                
+                                    
+                    <div class="flavor">
+                      <input type="radio" id="radio_3" name="DefaulterHasProperties" value="Yes" />
+                      <label for="radio_3" class="option11">Yes</label>
+                       
+                      
+                      <input type="radio" id="radio_4" name="DefaulterHasProperties" value="No" />
+                      <label for="radio_4" class="option13">No</label>
+                    </div>
+                    
+                 </div> 
 
-                                <div class="form-group  col-md-12"> 
-                                        <label> Has The Defaulter Been Discharged From Your Service? If So, On What Date? </label>
-                                      <input type="text" class="form-control" placeholder="">
-                                    </div>
 
-                                    <div class="form-group  col-md-12"> 
-                                            <label> Has a proposal for settlement been put forward by the defaulter? </label>
-                                          <input type="text" class="form-control" placeholder="">
-                                        </div>
+                  
+
+
+                 
+ 
+                 <div class="form-group col-md-12"> 
+                  <label> Is the defaulter's salary or comission due ? 
+                  </label>
+              
+                                  
+                  <div class="flavor">
+                    <input type="radio" id="radio_5" name="DefaulterHasSalaryOrCommissionDue" value="Yes" />
+                    <label for="radio_5" class="option11">Yes</label>
+                     
+                    
+                    <input type="radio" id="radio_6" name="DefaulterHasSalaryOrCommissionDue" value="No" />
+                    <label for="radio_6" class="option13">No</label>
+                  </div>
+                  
+               </div> 
+
+
+               
+               <div class="form-group col-md-12"> 
+                <label> Does the Insured have other securities? 
+                </label>
+            
+                                
+                <div class="flavor">
+                  <input type="radio" id="radio_8" name="InsuredHasOtherSecurities" value="Yes" />
+                  <label for="radio_8" class="option11">Yes</label>
+                   
+                  
+                  <input type="radio" id="radio_9" name="InsuredHasOtherSecurities" value="No" />
+                  <label for="radio_9" class="option13">No</label>
+                </div>
+                
+             </div> 
+
+
+             <div class="form-group col-md-12"> 
+              <label>Has the defaulter been discharged of service?
+              </label>
+          
+                              
+              <div class="flavor">
+                <input type="radio" id="radio_10" name="DefaulterHasbeenDischargedOfService" value="Yes" />
+                <label for="radio_10" class="option11">Yes</label>
+                 
+                
+                <input type="radio" id="radio_11" name="DefaulterHasbeenDischargedOfService" value="No" />
+                <label for="radio_11" class="option13">No</label>
+              </div>
+              
+           </div> 
+
+            
+
+            
+
+           <div class="form-group col-md-12"> 
+            <label>Has the defaulter Proposed Settlement?
+            </label>
+        
+                            
+            <div class="flavor">
+              <input type="radio" id="radio_12" name="HasDefaulterProposedSettlement" value="Yes" />
+              <label for="radio_12" class="option11">Yes</label>
+               
+              
+              <input type="radio" id="radio_13" name="HasDefaulterProposedSettlement" value="No" />
+              <label for="radio_13" class="option13">No</label>
+            </div>
+            
+         </div> 
+
+                
+           <div class="form-group col-md-6"> 
+            <label>Date Of Discharge</label>
+          <input type="date" class="form-control" placeholder="">
+        </div> 
+
+
+      
+              
+
+
+                
+
+
 
                                      
         

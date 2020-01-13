@@ -335,7 +335,7 @@
 
 .label{
     text-align:left !important;
-
+ 
 }
 
 .form-row {
@@ -453,9 +453,103 @@ form input.hidden, form select.hidden {
 }
  
  
+ 
+ 
+ 
+label{
+  font-family: 'Roboto', sans-serif !important;
 
- .form-row{
-   margin-block: 5%;
- }
+}
 
-  
+
+/*Css for Radio buttons*/
+
+ 
+
+input[type=radio] {
+  display: none;
+}
+input[type=radio] + label {
+  background-color: #FFFFFF;
+  border-color: #b3b3b3;
+  color: gray;
+  border-width: 2px;
+  border-style: solid;
+  border-radius: .5em;
+  padding: .5em 1em;
+}
+input[type=radio]:checked + label.option11 {
+  background-color: #8D1328;
+  border-color: #8D1328;
+  color: white;
+}
+input[type=radio]:checked + label.option12 {
+  background-color: #8D1328;
+  border-color: #8D1328;
+  color: white;
+}
+input[type=radio]:checked + label.option13 {
+  background-color: #8D1328;
+  border-color: #8D1328;
+  color: white;
+}
+input[type=radio]:checked + label.option21 {
+  background-color: #1EDD94;
+  border-color: #0c563a;
+  color: black;
+}
+input[type=radio]:checked + label.option22 {
+  background-color: #DD701E;
+  border-color: #562c0c;
+  color: black;
+}
+input[type=radio]:checked + label.option23 {
+  background-color: #E41B1B;
+  border-color: #5b0b0b;
+  color: black;
+}
+input[type=radio]:checked + label.option31 {
+  background-color: #1EDD94;
+  border-color: #0c563a;
+  color: black;
+}
+input[type=radio]:checked + label.option32 {
+  background-color: #DD701E;
+  border-color: #562c0c;
+  color: black;
+}
+input[type=radio]:checked + label.option33 {
+  background-color: #E41B1B;
+  border-color: #5b0b0b;
+  color: black;
+}
+input[type=radio]:checked + label.option41 {
+  background-color: #1EDD94;
+  border-color: #0c563a;
+  color: black;
+}
+input[type=radio]:checked + label.option42 {
+  background-color: #DD701E;
+  border-color: #562c0c;
+  color: black;
+}
+input[type=radio]:checked + label.option43 {
+  background-color: #E41B1B;
+  border-color: #5b0b0b;
+  color: black;
+}
+input[type=radio]:checked + label.option51 {
+  background-color: #1EDD94;
+  border-color: #0c563a;
+  color: black;
+}
+input[type=radio]:checked + label.option52 {
+  background-color: #DD701E;
+  border-color: #562c0c;
+  color: black;
+}
+input[type=radio]:checked + label.option53 {
+  background-color: #E41B1B;
+  border-color: #5b0b0b;
+  color: black;
+}
