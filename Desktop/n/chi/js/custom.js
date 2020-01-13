@@ -9,8 +9,8 @@
         var animating; //flag to prevent quick multi-click glitches
 
         $(".next").click(function () {
-            if (animating) return false;
-            animating = true;
+          //  if (animating) return false;
+           // animating = true;
 
             current_fs = $(this).parent();
             next_fs = $(this).parent().next();
@@ -33,27 +33,29 @@
                     //3. increase opacity of next_fs to 1 as it moves in
                     opacity = 1 - now;
                     current_fs.css({
-                        'transform': 'scale(' + scale + ')',
-                        'position': 'absolute'
+                       /* 'transform': 'scale(' + scale + ')',
+                        'position': 'absolute' */
                     });
                     next_fs.css({
                         'left': left,
                         'opacity': opacity
                     });
                 },
-                duration: 800,
+                duration: 400,
                 complete: function () {
                     current_fs.hide();
                     animating = false;
                 },
                 //this comes from the custom easing plugin
-                easing: 'easeInOutBack'
+              //  easing: 'easeInOutBack'
             });
+
+            
         });
 
         $(".previous").click(function () {
-            if (animating) return false;
-            animating = true;
+           // if (animating) return false;
+          //  animating = true;
 
             current_fs = $(this).parent();
             previous_fs = $(this).parent().prev();
@@ -63,8 +65,17 @@
 
             //show the previous fieldset
             previous_fs.show();
+            previous_fs.css({
+                'opacity':'1',
+             })
+            
+            //show the current fieldset
+            current_fs.hide();
+            
             //hide the current fieldset with style
-            current_fs.animate({
+            
+            
+            /*current_fs.animate({
                 opacity: 0
             }, {
                 step: function (now, mx) {
@@ -83,14 +94,19 @@
                         'opacity': opacity
                     });
                 },
-                duration: 800,
+                duration: 400,
                 complete: function () {
                     current_fs.hide();
                     animating = false;
                 },
                 //this comes from the custom easing plugin
-                easing: 'easeInOutBack'
+               // easing: 'easeInOutBack'
             });
+            */
+
+            //end hide the current fieldset with style
+
+
         });
 
         $(".submit").click(function () {
@@ -115,4 +131,29 @@
     verificationForm ();
    // phoneNoselect ();
     //nice_Select ();
+
+    //expandable inputs
+
+/*
+    $('input').on('keydown', function(evt) {
+        var $this = $(this),
+            size = parseInt($this.attr('size'), 10),
+            isValidKey = (evt.which >= 65 && evt.which <= 90) || // a-zA-Z
+                         (evt.which >= 48 && evt.which <= 57) || // 0-9
+                         evt.which === 32;
+    
+        if ( evt.which === 8 && size > 0 ) {
+            // backspace
+            $this.attr('size', size - 1);
+        } else if ( isValidKey ) {
+            // all other keystrokes
+            $this.attr('size', size + 1);
+        }
+    });
+*/
+    
+
 })(jQuery); 
+
+
+
