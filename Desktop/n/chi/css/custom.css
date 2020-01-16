@@ -1,6 +1,6 @@
 /*font Variables*/
 /*Color Variables*/
-@import url("https://fonts.googleapis.com/css?family=Roboto:300i,400,400i,500,700,900");
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:300i,400,400i,500,700,900");
 .multi_step_form {
   background: #f6f9fb;
   display: block;
@@ -21,12 +21,12 @@
   padding-bottom: 55px;
 }
 .multi_step_form #msform .tittle h2 {
-  font: 500 24px/35px "Roboto", sans-serif;
+  font: 500 24px/35px "Ubuntu", sans-serif;
   color: #3f4553;
   padding-bottom: 5px;
 }
 .multi_step_form #msform .tittle p {
-  font: 400 16px/28px "Roboto", sans-serif;
+  font: 400 16px/28px "Ubuntu", sans-serif;
   color: #5f6771;
 }
  
@@ -42,11 +42,11 @@
   display: none;
 }
 .multi_step_form #msform fieldset h3 {
-  font: 500 18px/35px "Roboto", sans-serif;
+  font: 500 18px/35px "Ubuntu", sans-serif;
   color: #3f4553;
 }
 .multi_step_form #msform fieldset h6 {
-  font: 400 15px/28px "Roboto", sans-serif;
+  font: 400 15px/28px "Ubuntu", sans-serif;
   color: #5f6771;
   padding-bottom: 30px;
 }
@@ -95,7 +95,7 @@
   border: 1px solid #d8e1e7;
   padding: 0 20px;
   height: auto;
-  font: 400 15px/48px "Roboto", sans-serif;
+  font: 400 15px/48px "Ubuntu", sans-serif;
   color: #5f6771;
   box-shadow: none;
   outline: none;
@@ -196,7 +196,7 @@
   text-align: center;
 }
 .multi_step_form #msform fieldset .passport h4 {
-  font: 500 15px/23px "Roboto", sans-serif;
+  font: 500 15px/23px "Ubuntu", sans-serif;
   color: #5f6771;
   padding: 0;
 }
@@ -211,7 +211,7 @@
   width: 168px;
   border-radius: 5px;
   cursor: pointer;
-  font: 700 14px/40px "Roboto", sans-serif;
+  font: 700 14px/40px "Ubuntu", sans-serif;
   border: 1px solid #99a2a8;
   text-align: left;
   transition: all 300ms linear 0s;
@@ -235,7 +235,7 @@
   padding-bottom: 60px;
 }
 .multi_step_form #msform fieldset .file_added li {
-  font: 400 15px/28px "Roboto", sans-serif;
+  font: 400 15px/28px "Ubuntu", sans-serif;
   color: #5f6771;
 }
 .multi_step_form #msform fieldset .file_added li a {
@@ -263,7 +263,7 @@
   width: calc(100%/3);
   float: left;
   position: relative;
-  font: 500 13px/1 "Roboto", sans-serif;
+  font: 500 13px/1 "Ubuntu", sans-serif;
 }
 .multi_step_form #msform #progressbar li:nth-child(2):before {
   content: "\f12f";
@@ -302,6 +302,21 @@
   background: #8D1328;
   color: white;
 }
+
+.buttond{
+     background: #8D1328;
+    color: white !important;
+    border: 0 none;
+    border-radius: 5px;
+    cursor: pointer;
+    min-width: 130px;
+    font: 700 14px/40px "Ubuntu", sans-serif;
+    border: 1px solid #8D1328;
+    margin: 0 5px;
+    text-transform: uppercase;
+    display: inline-block;
+  
+}
 .multi_step_form #msform .action-button {
   background: #8D1328;
   color: white;
@@ -309,7 +324,7 @@
   border-radius: 5px;
   cursor: pointer;
   min-width: 130px;
-  font: 700 14px/40px "Roboto", sans-serif;
+  font: 700 14px/40px "Ubuntu", sans-serif;
   border: 1px solid #8D1328;
   margin: 0 5px;
   text-transform: uppercase;
@@ -415,7 +430,8 @@ form .input-container .newOption:hover:after {
 }
 form .input-container .newOption.selected:after {
   content: '\f00c';
-  font-family: FontAwesome;
+ /* font-family: FontAwesome; */
+  font-family: 'Ubuntu', sans-serif !important;
    display: block;
   top: 0;
   right: 0;
@@ -456,11 +472,7 @@ form input.hidden, form select.hidden {
  
  
  
-label{
-  font-family: 'Roboto', sans-serif !important;
-
-}
-
+ 
 
 /*Css for Radio buttons*/
 
@@ -553,3 +565,125 @@ input[type=radio]:checked + label.option53 {
   border-color: #5b0b0b;
   color: black;
 }
+
+
+
+
+/*** LOGIN page css*/
+
+body {
+  background-color: #f5f5ff;
+  font-family: 'Ubuntu', sans-serif !important;
+}
+
+.main {
+  background-color: #FFFFFF;
+  width: 400px;
+  height: 400px;
+  padding:10px;
+  margin: 7em auto;
+  border-radius: 1.5em;
+  box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+}
+
+.sign {
+  padding-top: 40px;
+  color: #8D1328;
+  font-family: 'Ubuntu', sans-serif !important;
+  font-weight: bold;
+  font-size: 23px;
+}
+
+.un {
+width: 100%;
+color: rgb(38, 50, 56);
+font-weight: 700;
+font-size: 14px;
+letter-spacing: 1px;
+background: rgba(136, 126, 126, 0.04);
+padding: 10px 20px;
+border: none;
+border-radius: 20px;
+outline: none;
+box-sizing: border-box;
+border: 2px solid rgba(0, 0, 0, 0.02);
+margin-bottom: 50px;
+margin-left: 5%;
+text-align: center;
+margin-bottom: 27px;
+font-family: 'Ubuntu', sans-serif !important;
+}
+
+form.form1 {
+  padding-top: 40px;
+}
+
+.pass {
+      width: 76%;
+color: rgb(38, 50, 56);
+font-weight: 700;
+font-size: 14px;
+letter-spacing: 1px;
+background: rgba(136, 126, 126, 0.04);
+padding: 10px 20px;
+border: none;
+border-radius: 20px;
+outline: none;
+box-sizing: border-box;
+border: 2px solid rgba(0, 0, 0, 0.02);
+margin-bottom: 50px;
+margin-left: 46px;
+text-align: center;
+margin-bottom: 27px;
+font-family: 'Ubuntu', sans-serif !important;
+}
+
+
+.un:focus, .pass:focus {
+  border: 2px solid rgba(0, 0, 0, 0.18) !important;
+  
+}
+
+.submit {
+cursor: pointer;
+  border-radius: 5em;
+  color: #fff !important;
+  background: linear-gradient(to right, #8D1328, #8d132896);
+  border: 0;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  font-family: 'Ubuntu', sans-serif !important;
+  margin-left: 35%;
+  font-size: 13px;
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.04);
+}
+
+.forgot {
+  text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
+  color: #E1BEE7;
+  padding-top: 15px;
+}
+
+a {
+  text-shadow: 0px 0px 3px rgba(117, 117, 117, 0.12);
+  color: #E1BEE7;
+  text-decoration: none
+}
+
+@media (max-width: 600px) {
+  .main {
+      border-radius: 0px;
+  }
+  
+}
+
+label{
+  font-family: 'Ubuntu', sans-serif !important;
+
+}
+
+  
+
+
