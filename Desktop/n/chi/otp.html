@@ -1,0 +1,70 @@
+<html>
+
+    <head>
+       <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+     
+      <title>Consolidated Hallmark Insurance</title>
+      <link rel="icon" href="https://chiplc.com/wp-content/uploads/2018/01/chi-logo.png"  />
+
+      <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+       <link href="css/otp.css" rel="stylesheet" />
+
+    </head>
+    
+    <body>
+
+      <div class="container">
+        <div class="row main">
+
+            
+            <div class="col-md-12 text-center">
+                <img src="img/phone.png"
+                 class="img-responsive" 
+                 style="width: 50px; margin-top:20%;"
+                 />
+            </div> 
+
+            <div class="col-md-12 text-center">
+               <!-- <h1>OTP </h1>-->
+               <div class="prompt">
+                Enter the code generated on your mobile device below!
+            </div>
+            
+            <form method="get" class="digit-group" data-group-name="digits" data-autosubmit="false" autocomplete="off">
+                <input type="text" id="digit-1" name="digit-1" data-next="digit-2" />
+                <input type="text" id="digit-2" name="digit-2" data-next="digit-3" data-previous="digit-1" />
+                <input type="text" id="digit-3" name="digit-3" data-next="digit-4" data-previous="digit-2" />
+                <span class="splitter">&ndash;</span>
+                <input type="text" id="digit-4" name="digit-4" data-next="digit-5" data-previous="digit-3" />
+                <input type="text" id="digit-5" name="digit-5" data-next="digit-6" data-previous="digit-4" />
+                <input type="text" id="digit-6" name="digit-6" data-previous="digit-5" />
+            </form>
+            <br/>
+
+            <a href="policynumberpage.html" type="button" class="next buttond">Enter</a>  
+
+
+                
+            </div>
+
+           
+        </div>
+    </div>
+      
+         
+
+      <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script
+  src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"
+  integrity="sha256-0YPKAwZP7Mp3ALMRVB2i8GXeEndvCq3eSl/WsAl1Ryk="
+  crossorigin="anonymous"></script>
+
+        <!-- Custom scripts for this template -->
+  <script src="js/otp.js"></script>
+    
+    </body>
+    
+    </html>

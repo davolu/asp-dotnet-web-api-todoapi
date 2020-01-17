@@ -42,28 +42,20 @@ table.table-content {
       border-bottom: 1px solid #f9f9f9;
       border-bottom: 2px solid #8D1328;
     }
-    html,
-    body {
-      height: 100vh;
-      padding: 0;
-      margin: 0;
-      box-sizing: content-box;
-    }
+     
     .nav {
       position: relative;
     }
     .profile-container {
-      background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
-      height: calc(100vh - 65px);
-      box-sizing: content-box;
+       box-sizing: content-box;
       overflow: hidden;
       overflow-y: auto;
+      background: transparent !important;
       padding: 0;
     }
     .profile-container .profile-content,
     .profile-container .profile-header {
-      height: 100%;
-      background-color: #fff;
+       background-color: #fff;
     }
     .profile-container .profile-header {
       text-align: center;
@@ -79,3 +71,12 @@ table.table-content {
       vertical-align: middle;
     }
     
+
+    .main {
+      background-color: #FFFFFF;
+      
+      padding:0px;
+      margin: 7em auto;
+      border-radius: 1.5em;
+      box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+    }
