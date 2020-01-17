@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Ubuntu:200");
  
- 
+ body{
+   background-color: #f5f5f5;
+ }
 
 .digit-group input {
   width: 30px;
@@ -24,5 +26,31 @@
 .prompt {
   margin-bottom: 20px;
   font-size: 20px;
-  color: white;
+  color: #7a7a7a;
+}
+
+.main {
+  background-color: #FFFFFF;
+  width: 400px;
+  height: 400px;
+  padding:10px;
+  margin: 7em auto;
+  border-radius: 1.5em;
+  box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+}
+
+
+.buttond{
+  background: #8D1328;
+ color: white !important;
+ border: 0 none;
+ border-radius: 5px;
+ cursor: pointer;
+ min-width: 130px;
+ font: 700 14px/40px "Ubuntu", sans-serif;
+ border: 1px solid #8D1328;
+ margin: 0 5px;
+ text-transform: uppercase;
+ display: inline-block;
+
 }
