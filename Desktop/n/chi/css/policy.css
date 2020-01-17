@@ -1,0 +1,81 @@
+table.table-content {
+      min-width: 50%;
+      max-width: 70%;
+      margin: 20px;
+    }
+    table.table-content tr:nth-child(odd) {
+      background-color: #f4f4f4;
+    }
+    table.table-content tr th,
+    table.table-content tr td {
+      padding: 5px 10px 5px  5px;
+      font-family: 'Segoe UI';
+      color: #555;
+    }
+    table.table-content tr th {
+      padding-left: 10px;
+      width: 120px;
+    }
+    table.table-content tr td {
+      word-wrap: break-word;
+    }
+    ul li {
+      display: inline-block;
+      width: 40%;
+      box-sizing: content-box;
+      float: left;
+      margin-bottom: 4px;
+      margin-right: 4px;
+      clear: right;
+      font-size: 12px;
+    }
+    ul li span {
+      color: white;
+      display: block;
+      padding: 5px 15px;
+      color: #444;
+    }
+    ul li span:first-child {
+      font-weight: bold;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      border-bottom: 1px solid #f9f9f9;
+      border-bottom: 2px solid #8D1328;
+    }
+    html,
+    body {
+      height: 100vh;
+      padding: 0;
+      margin: 0;
+      box-sizing: content-box;
+    }
+    .nav {
+      position: relative;
+    }
+    .profile-container {
+      background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+      height: calc(100vh - 65px);
+      box-sizing: content-box;
+      overflow: hidden;
+      overflow-y: auto;
+      padding: 0;
+    }
+    .profile-container .profile-content,
+    .profile-container .profile-header {
+      height: 100%;
+      background-color: #fff;
+    }
+    .profile-container .profile-header {
+      text-align: center;
+    }
+    .profile-container .profile-header .image {
+      padding: 20px;
+      height: 150px;
+      border: 4px solid #fff;
+      box-sizing: border-box;
+      background-image: linear-gradient(90deg, #fdfbfb 0%, #f7f7f7 100%);
+    }
+    .profile-container .profile-header .image img {
+      vertical-align: middle;
+    }
+    
