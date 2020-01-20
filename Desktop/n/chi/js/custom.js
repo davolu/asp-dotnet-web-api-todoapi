@@ -12,9 +12,42 @@
           //  if (animating) return false;
            // animating = true;
 
+        
             current_fs = $(this).parent();
             next_fs = $(this).parent().next();
+            
+            //validate current form    
+            
+           var  ValidationPassed = true;
+            $(this).parent()
+            .find(".validateMe")
+             .each(function(){
+                  
+             //  console.log($(this).val())
 
+               if($(this).val() == "")
+               {
+
+                //style the current form to show error
+                $(this).css('border','solid 1px #8D1328');
+
+                //an input is empty
+                ValidationPassed = false;
+               }
+               else{
+                $(this).css('border','1px solid #d8e1e7'); 
+               }
+                
+             
+            });
+
+             //end form validation
+            
+
+
+            if(ValidationPassed)
+            {
+                //only move to the next form when input validation is valid
             //activate next step on progressbar using the index of next_fs
             $("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
 
@@ -49,6 +82,15 @@
                 //this comes from the custom easing plugin
               //  easing: 'easeInOutBack'
             });
+            }
+            else{
+
+                //form validation failed.
+                //don't move to the next step
+            }
+            
+
+             
 
             
         });
@@ -63,6 +105,11 @@
             //de-activate current step on progressbar
             $("#progressbar li").eq($("fieldset").index(current_fs)).removeClass("active");
 
+
+   
+
+             
+             
             //show the previous fieldset
             previous_fs.show();
             previous_fs.css({
@@ -114,23 +161,10 @@
         })
     }; 
     
-    //* Add Phone no select
-    function phoneNoselect(){
-        if ( $('#msform').length ){   
-            $("#phone").intlTelInput(); 
-            $("#phone").intlTelInput("setNumber", "+880"); 
-        };
-    }; 
-    //* Select js
-    function nice_Select(){
-        if ( $('.product_select').length ){ 
-            $('select').niceSelect();
-        };
-    }; 
+ 
     /*Function Calls*/  
     verificationForm ();
-   // phoneNoselect ();
-    //nice_Select ();
+ 
 
     //expandable inputs
 
@@ -156,4 +190,12 @@
 })(jQuery); 
 
 
+//function to show the name of the uploaded file
+function showname (file, name) {
+    var file = document.getElementById(''+file+''); 
+    var name = document.getElementById(''+name+'');
+    name.innerHTML= file.files.item(0).name;
+  };
 
+
+   
