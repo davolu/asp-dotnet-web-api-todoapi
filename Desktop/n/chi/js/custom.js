@@ -8,6 +8,67 @@
         var left, opacity, scale; //fieldset properties which we will animate
         var animating; //flag to prevent quick multi-click glitches
 
+
+        //validate last page 
+
+        
+        $("a.action-button").click(function () {
+            //  if (animating) return false;
+             // animating = true;
+  
+          
+              current_fs = $(this).parent();
+              next_fs = $(this).parent().next();
+              
+              //validate current form    
+              
+             var  ValidationPassed = true;
+              $(this).parent()
+              .find(".validateMe")
+               .each(function(){
+                    
+               //  console.log($(this).val())
+  
+                 if($(this).val() == "")
+                 {
+  
+                  //style the current form to show error
+                  $(this).css('border','solid 1px #8D1328');
+  
+                  //an input is empty
+                  ValidationPassed = false;
+                 }
+                 else{
+                  $(this).css('border','1px solid #d8e1e7'); 
+                 }
+                  
+               
+              });
+  
+               //end form validation
+              
+  
+  
+              if(ValidationPassed)
+              {
+                  
+                //submit form 
+                $(this).submit();
+                document.getElementById('msform').submit();
+              }
+              else{
+  
+                  //form validation failed.
+                  //don't move to the next step
+              }
+              
+  
+               
+  
+              
+          });
+
+
         $(".next").click(function () {
           //  if (animating) return false;
            // animating = true;
