@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Renewal Notice Motor with Data Fields</title>
+        
+         <style>
+            body{
+                margin: 40px;
+                margin-top: 80px;
+                font-family: 'Segoe UI';
+            }
+
+            h1{
+                text-align: center;
+                margin-bottom: 0;
+            }
+
+            #header{
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                height: auto;
+            }
+
+            .sub-header{               
+                width: 15%;
+                height: auto;
+                padding: 10px;
+                margin: 10px;
+            }
+
+            .bold{
+                font-weight: bold;
+            }
+
+            .small{
+                width: 10%;
+                height: auto;
+                padding: 10px;
+                margin: 10px;
+            }
+
+            p{
+                margin: 3px;
+                font-size: 13px;
+                padding: 5px 10px 5px 5px;
+                font-family: 'Segoe UI';
+                color: #555;
+            }
+            .sub-header >p{
+                font-family: 'Segoe UI';
+                color: #555;
+            }
+            #motor{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 40px;
+                margin-top: 2px;
+                border-top: 1px solid #8D1328;
+                border-bottom: 1px solid #8D1328;    
+                   
+            }
+
+            .round{
+                width: 500px;
+                height: 40px;
+                border-radius: 40px;
+                background-color: rgb(242,242,242);
+                border: 1px solid rgb(220,220,220);
+                margin: 0;
+                text-align: center;             
+            }
+
+            h3{
+                 font-family: 'Segoe UI';
+
+                color: white;
+                display: block;
+                padding: 5px 15px;
+                color: #444;
+            }
+
+            #info{
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                height: 250px;
+                /*border-bottom: 1px solid brown; */
+            }
+
+            #info_1{
+                display: flex;
+                flex-direction: column;
+                width: 50%;
+                height: 250;
+               
+            }
+
+            #info_2{
+                display: flex;
+                flex-direction: column;
+                width: 50%;
+                height: 250px;
+                           
+            }
+
+            .round_2{
+                display: flex;
+                justify-content: flex-start;
+                align-content: space-between;
+                width: 550px;
+                height: 40px;
+
+                padding: 5px 10px 5px 5px;
+                font-family: 'Segoe UI';
+                color: #555;
+             /*   border: 1px solid rgb(220,220,220); */
+                border-radius: 6px;
+             /*   background-color: rgb(242,242,242); */
+                margin: 3px;
+                margin-left: 5px;
+                text-align: center;    
+            }
+
+            .round_2 > p {
+                padding: 5px 10px 5px 5px;
+                font-family: 'Segoe UI';
+                color: #555 !important;
+            }
+
+            #container{
+                width: 100%;
+                height: 100px;
+               
+            }
+
+            table, th, td {
+                border: 1px solid #ccc;
+                border-collapse: collapse;
+                padding: 5px 10px 5px  5px;
+                font-family: 'Segoe UI';
+                color: #555;
+                font-size: 15px !important;
+            }
+
+            th, td {
+                padding: 5px 10px 5px  5px;
+                font-family: 'Segoe UI';
+                color: #555;
+                font-size: 15px  !important;
+            }
+
+            th{
+                text-align: center;
+                margin-top: 0;
+                padding: 5px 10px 5px  5px;
+                font-family: 'Segoe UI';
+                color: #555;
+                font-size: 15px  !important;
+            }
+
+            #container_2{
+                margin: 15px;
+            }
+ 
+
+
+    table.table-content {
+      min-width: 95%;
+      max-width: 70%;
+      margin: 20px;
+    }
+    table.table-content tr:nth-child(odd) {
+      background-color: #f4f4f4 !important;
+    }
+    table.table-content tr th,
+    table.table-content tr td {
+      padding: 5px 10px 5px  5px;
+      font-family: 'Segoe UI';
+      color: #555;
+      font-size: 13px !important;
+    }
+    table.table-content tr th {
+      padding-left: 10px;
+      width: 120px;
+      font-size: 13px !important;
+    }
+    table.table-content tr td {
+      word-wrap: break-word;
+    }
+
+    th{
+        font-size: 13px !important;
+    }
+    ul li {
+      display: inline-block;
+      width: 40%;
+      box-sizing: content-box;
+      float: left;
+      margin-bottom: 4px;
+      margin-right: 4px;
+      clear: right;
+      font-size: 12px;
+    }
+    ul li span {
+      color: white;
+      display: block;
+      padding: 5px 15px;
+      color: #444;
+    }
+    ul li span:first-child {
+      font-weight: bold;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      border-bottom: 1px solid #f9f9f9;
+      border-bottom: 1px solid #8D1328;
+    }
+     
+    .nav {
+      position: relative;
+    }
+    .profile-container {
+       box-sizing: content-box;
+      overflow: hidden;
+      overflow-y: auto;
+      background: transparent !important;
+      padding: 0;
+    }
+    .profile-container .profile-content,
+    .profile-container .profile-header {
+       background-color: #fff;
+    }
+    .profile-container .profile-header {
+      text-align: center;
+    }
+    .profile-container .profile-header .image {
+      padding: 20px;
+      height: 150px;
+      border: 4px solid #fff;
+      box-sizing: border-box;
+      background-image: linear-gradient(90deg, #fdfbfb 0%, #f7f7f7 100%);
+    }
+    .profile-container .profile-header .image img {
+      vertical-align: middle;
+    }
+    
+
+    .main {
+      background-color: #FFFFFF;
+      
+      padding:0px;
+      margin: 7em auto;
+      border-radius: 1.5em;
+      box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+    }
+
+    
+.buttond{
+  background: #8D1328;
+ color: white !important;
+ border: 0 none;
+ border-radius: 5px;
+ cursor: pointer;
+ min-width: 130px;
+ font: 700 14px/40px "Ubuntu", sans-serif;
+ border: 1px solid #8D1328;
+ margin: 0 5px;
+ text-transform: uppercase;
+ display: inline-block;
+
+}
+
+.finep {
+    font: 400 16px/28px "Ubuntu", sans-serif;
+    color: #5f6771;
+}
+
+        </style>
+    </head>
+    <body>
+       
+
+    <!-- Tittle -->
+    <div class="tittle row" style="margin-top:6%;">
+
+        <div class="col-md-6" style="float: left; width: 50%; text-align: center;">
+         <a class="navbar-brand js-scroll-trigger" href="#page-top">
+  
+                <img src="img/chi-logo.png" style="width:250px;" />
+              </a>
+        </div>    
+        
+        
+       
+        <div class="col-md-6" style="float: left; width: 50%;  text-align: center;">
+             
+<!--        <p class="finep" style="margin-top:9%;">Motor Insurance Renewal Notice </p> -->
+        </div>    
+  
+  
+  
+      </div>
+  
+
+      <div   class="container main" style="clear:both; padding:10px; margin-left:10%; margin-right:10%;">
+
+        <div id="header">
+            <div  class="small"><p class="bold">Head Office:</p></div>
+            <div class="sub-header"> 
+                <p> 226, Ikorodu Road </p>
+                <p>Obanikoro, Lagos.</p>
+                <p>0700CHIINSURANCE</p>
+                <p>(070024467872623)</p>
+            
+            </div>
+            <div class="small"> <p class="bold">V.I Office:</p> </div>
+            <div class="sub-header">
+                <p>33D,Bishop Aboyade Cole Street,</p>
+                <p>Victoria Island, Lagos.</p>
+                <p>01-2912532</p>
+                <p>01-2912543</p>
+            </div>
+            <div class="sub-header">
+                <p><b>Marketing Staff:</b> ABIGAIL IJISEMI</p>
+                <p> Date: 17-February-2020</p>
+            </div>
+        </div>
+
+        <div id="motor">
+            <div class="roundx">
+                <h3>MOTOR INSURANCE RENEWAL NOTICE</h3>
+            </div>
+        </div>
+
+        <div id="info">
+            <div id="info_1">
+                <div class="round_2">
+                    <p><b> Broker Name:</b> Brocker Name</p>
+                </div>
+                <div class="round_2">
+                    <p><b> Cover Type:</b> Cover Type  </p>
+                </div>
+                <div class="round_2">
+                    <p><b> Policy No:</b> Policy No </p>
+                </div>
+                <div class="round_2">
+                    <p><b> Period from: </b> Start Date TO End Date  </p>
+                </div>
+                <div class="round_2">
+                    <p><b> Lead Underwriter: </b></p>
+                </div>
+              
+            </div>
+
+
+            <div id="info_2">
+                <div class="round_2">
+                    <p><b> Insured Name: </b> Insured Name </p>
+                </div>
+                <div class="round_2">
+                    <p><b> Address:</b> 1 Insured Address </p>
+                </div>
+                <div class="round_2">
+                    <p><b> Telephone: </b> Insured Mobile </p>
+                </div>
+                <div class="round_2">
+                    <p><b> Our Proportion: </b> prop </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="container" style="margin-top:5%; border-top: 1px solid brown; margin-left:1%;  ">
+            <p>Dear Sir/Madam,</p><br>
+            <p>We wish to inform you that the above policy will be due for renewal on {Policy Renewal date}. We shall be pleased to receive your instruction for the renewal along with remittance of the renewal premium stated hereunder on or before the renewal date to ensure continuity of cover.</p>
+        </div>
+
+        <table class="table-content">
+            <tr>
+                <th>VEHICLE <br>MAKE</th>
+                <th>VEHICLE <br>MODEL </th>
+                <th> VEHICLE REG<br> NO.  </th>
+                <th> SUM INSURED</th>
+                <th>BASIC <br> PREMIUM  </th>
+                <th> PRO-RATA PREMIUM </th>
+                <th>PREMIUM DUE  </th>
+            </tr>
+
+            <tr>
+                <td>VEHICLE_MAKE  </td>
+                <td>VEHICLE_MODEL </td>
+                <td> VEHICLE_REGNO </td>
+                <td> SUM_INSURED </td>
+                <td> GROSS_PREMIUM </td>
+                <td> PRO_RATA_PREMIUM </td>
+                <td> NET_AMOUNT </td>
+            </tr>
+
+            <tr>
+                <td> </td>
+                <td> </td>
+                <td><b>TOTAL </b></td>
+                <td><b>8,000,000.00</b> </td>
+                <td> <b>800,000.00</b></td>
+                <td> </td>
+                <td> <b>120,000.00</b></td>
+            </tr>
+        </table>
+
+       <div id="container_2">
+           <p> If renewal is to be effected at a REVISED SUM INSURED, please indicate the amount.</p>
+           <p> You may wish to send your cheque for the renewal premium to our office or pay into the below account:</p><br>
+
+           <p><b>Bank Name:</b> Zenith Bank Plc</p>
+           <p><b>Account Name:</b> Consolidated Hallmark Insurance Plc.</p>
+           <p><b>Account Number:</b> 1011219874</p><br>
+           <p>We thank you for your valued patronage</p><br>
+           <p> For: Consolidated Hallmark Ins. Plc</p>
+       </div>
+        
+
+    </div>
+
+
+    </body>
+</html>
+

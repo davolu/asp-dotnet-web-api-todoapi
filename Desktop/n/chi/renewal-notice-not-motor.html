@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Renewal Notice not Motor </title>
+        <style>
+            body{
+                margin: 40px;
+                margin-top: 80px;
+                font-family: 'Segoe UI';
+            }
+
+             
+
+            #header{
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                height: auto;
+            }
+
+            .sub-header{               
+                width: 19%;
+                height: auto;
+                padding: 10px;
+                margin: 10px;
+            }
+
+            .bold{
+                font-weight: bold;
+            }
+
+            .small{
+                width: 10%;
+                height: auto;
+                padding: 10px;
+                margin: 10px;
+            }
+
+            #header p{
+                margin: 3px;
+                font-size: 13px;
+                font-family: 'Segoe UI';
+                color: #555;
+            }
+
+            h4, h3{
+                margin: 3px;
+                font-size: 13px;
+                font-family: 'Segoe UI';
+                color: #555;
+            }
+
+            #main{
+                width: 100%;
+                height: auto;
+               /* border: 1px solid lightgray; */
+                border-radius: 5px;
+            }
+
+            #container_1{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 40px;
+                margin-top: 2px;
+                width: 100%;
+                height: 70px;
+                border-bottom: 1px solid #8D1328;    
+            }
+
+            #container_2{
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                height: 200px;
+                 
+            }
+
+            #container_3{
+                width: 100%;
+                height: 210px;
+                
+                  
+            }
+
+            #container_4{
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                height: 400px;
+                
+                margin-left: 5%;
+               
+            }
+
+            .cont_1{
+                width: 40%;
+                height: 400px;
+                
+            }
+
+            .cont_2{
+                width: 60%;
+                height: 400px;
+               
+            }
+
+            #container_5{
+                width: 100%;
+                height: auto;
+                margin-left: 20px;
+               
+            }
+
+            .round{
+                width: 500px;
+                height: 40px;
+                border-radius: 40px;
+               /* background-color: rgb(242,242,242);
+                border: 1px solid rgb(220,220,220); */
+                margin: 0;
+                text-align: center;     
+            } 
+
+            #round_2{
+                display: flex;
+                flex-direction: column;
+                width: 96%;
+                height: 197px;
+                border-radius: 40px;
+                /*background-color: rgb(242,242,242);
+                border: 1px solid rgb(220,220,220); */
+               
+
+            }
+
+
+             h1{
+                font-family: 'Segoe UI';
+                color: white;
+                display: block;
+                padding: 5px 15px;
+                color: #444;
+            }   
+
+            h2{
+                margin-left: 20px;
+            }
+
+            #container_3 p{
+                margin-left: 50px;
+            }
+
+            #container_4 p{
+                font-weight: bold;
+                font-size: 13px;
+            }
+
+            sup{
+                font-weight: 100;
+                font-size: 13px;
+            }
+
+            span{
+                content: "\20A6";
+            }
+
+
+
+
+            #container_2 b{
+                margin-left: 20px;
+
+            }
+
+            .date{
+                font-size: 10px;
+                float: right;
+                margin-right: 100px;
+            }
+
+           
+ 
+th{
+    text-align: center !important;
+}
+            table.table-content {
+      min-width: 50%;
+      max-width: 70%;
+      margin: 20px;
+    }
+    table.table-content tr:nth-child(odd) {
+      background-color: #f4f4f4;
+    }
+    table.table-content tr th,
+    table.table-content tr td {
+      padding: 5px 10px 5px  5px;
+      font-family: 'Segoe UI';
+      color: #555;
+    }
+    table.table-content tr th {
+      padding-left: 10px;
+      width: 120px;
+    }
+    table.table-content tr td {
+      word-wrap: break-word;
+    }
+    ul li {
+      display: inline-block;
+      width: 40%;
+      box-sizing: content-box;
+      float: left;
+      margin-bottom: 4px;
+      margin-right: 4px;
+      clear: right;
+      font-size: 12px;
+    }
+    ul li span {
+      color: white;
+      display: block;
+      padding: 5px 15px;
+      color: #444;
+    }
+    ul li span:first-child {
+      font-weight: bold;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      border-bottom: 1px solid #f9f9f9;
+      border-bottom: 2px solid #8D1328;
+    }
+     
+    .nav {
+      position: relative;
+    }
+    .profile-container {
+       box-sizing: content-box;
+      overflow: hidden;
+      overflow-y: auto;
+      background: transparent !important;
+      padding: 0;
+    }
+    .profile-container .profile-content,
+    .profile-container .profile-header {
+       background-color: #fff;
+    }
+    .profile-container .profile-header {
+      text-align: center;
+    }
+    .profile-container .profile-header .image {
+      padding: 20px;
+      height: 150px;
+      border: 4px solid #fff;
+      box-sizing: border-box;
+      background-image: linear-gradient(90deg, #fdfbfb 0%, #f7f7f7 100%);
+    }
+    .profile-container .profile-header .image img {
+      vertical-align: middle;
+    }
+
+    .main {
+      background-color: #FFFFFF;
+      padding:0px;
+      margin: 7em auto;
+      border-radius: 1.5em;
+      box-shadow: 0px 11px 35px 2px rgba(0, 0, 0, 0.14);
+    }
+
+    
+.buttond{
+  background: #8D1328;
+ color: white !important;
+ border: 0 none;
+ border-radius: 5px;
+ cursor: pointer;
+ min-width: 130px;
+ font: 700 14px/40px "Ubuntu", sans-serif;
+ border: 1px solid #8D1328;
+ margin: 0 5px;
+ text-transform: uppercase;
+ display: inline-block;
+
+}
+
+.finep {
+    font: 400 16px/28px "Ubuntu", sans-serif;
+    color: #5f6771;
+}
+
+            p{
+                font-size: 15px;
+                font-family: 'Segoe UI';
+                color: #555;
+                
+            }   
+        </style>
+    </head>    
+    <body>
+
+          <!-- Tittle -->
+    <div class="tittle row" style="margin-top:6%;">
+
+        <div class="col-md-6" style="float: left; width: 50%; text-align: center;">
+         <a class="navbar-brand js-scroll-trigger" href="#page-top">
+  
+                <img src="img/chi-logo.png" style="width:250px;" />
+              </a>
+        </div>    
+        
+        
+       
+        <div class="col-md-6" style="float: left; width: 50%;  text-align: center;">
+             
+<!--        <p class="finep" style="margin-top:9%;">Motor Insurance Renewal Notice </p> -->
+        </div>    
+  
+  
+  
+      </div>
+  
+
+      <div   class="container main" style="clear:both; padding:10px; margin-left:10%; margin-right:10%;">
+  
+         <div id="header">
+            <div  class="small"><p class="bold">Head Office:</p></div>
+            <div class="sub-header"> 
+                <p> 226, Ikorodu Road </p>
+                <p>Obanikoro, Lagos.</p>
+                <p>0700CHIINSURANCE</p>
+                <p>(070024467872623)</p>
+            
+            </div>
+            <div class="small"> <p class="bold">V.I Office:</p> </div>
+            <div class="sub-header">
+                <p>33D,Bishop Aboyade Cole Street,</p>
+                <p>Victoria Island, Lagos.</p>
+                <p>01-2912532</p>
+                <p>01-2912543</p>
+            </div>
+        </div>    
+
+        <div id="main">
+
+            <div id="container_1">
+                <div class="round">
+                    <h3>RENEWAL NOTICE LETTER</h3>
+                </div>
+            </div>
+
+            <div id="container_2">
+                <div id="round_2">
+                   
+                    <table class="table-content">
+                        <tr>
+                          <th>Insured name</th><td>SEA COACH BOAT COMPANY LIMITED<sup>-insured_name</sup></td>
+                        </tr>
+                        <tr>
+                          <th>Address:</th><td> BEACH ROAD, EBUTE IGA IKORODU, LAGOS<sup>-Address</sup></td>
+                        </tr>
+                        <tr>
+                          <th>Telephone No</th><td>08030871559<sup>-mobilephone/lindline</sup></td>
+                        </tr>
+                        <tr>
+                          <th>Marketing Staff</th><td>EMMANUEL ODUSANYA<sup>-mkt_staff</sup></td>
+                        </tr>
+                        
+                      </table>
+              
+               </div>
+            </div>
+
+            <div id="container_3" style="margin-top:3%;">
+                <h3 style="margin-left:5%;">Dear Sir/Madam,</h3>
+                <div style="margin-left: 2%;">
+                <p>We wish to inform you that this policy will be due for renewal on 08-February-2020 <sup>-renewal Date</sup></p>
+                <p>We shall be pleased to receive your instruction for renewal aliong with your remittance</p>
+                <p>of the renewal premium stated hereunder on or before the renewal date to ensure</p>
+                <p>continuity of cover.</p>
+                </div>
+            </div>
+
+            <div id="container_4">
+                <div class="cont_1">
+                    <p>CLASS OF BUSINESS:</p>
+                    <p>POLICY NUMBER:</p>
+                    <p>INSURANCE PERIOD:</p>
+                    <p>EXISTING SUM INSURED (100%):</p>
+                    <p>EXISTING GROSS PREMIUM (100%):</p>
+                    <p>PRO-RATA PREMIUM:</p>
+                    <p>AGENT/BROKER NAME:</p>
+                    <P>OUR PROPORTION:</P>
+                    <p>LEAD UNDERWRITER:</p>
+                </div>
+                <div class="cont_2">
+                    <p>MARINE HULL AND MACHINERY <sup>-Class_of_Business</sup></p>
+                    <p>45116124700001<sup>-policy_no</sup></p>
+                    <p>08-February-2019 <sup>-start_date</sup>  TO  07-February-2020<sup>-end_date</sup></p> 
+                    <p><span>&#8358;</span> 31,875,000.00 <sup>-Sum_insured</sup></p>
+                    <p><span>&#8358;</span> 339,989.53<sup>Gross_Premium</sup></p>
+                    <p><span>&#8358;</span>0000,000.00 <sup>-Pro-Rata Premium</sup></p>
+                    <p>OSE OLUYANWO</p>
+                    <p>100.00<sup>-prop</sup></p>
+                </div>
+            </div>
+
+            <div id="container_5">
+                <p>If renewal is to be effected as a REVISED SUM INSURED please indicate the amount.</p>
+                <p> You may wish to send your cheque for the renewal premium to our office or pay into the below account:</p><br>
+                <p><b>Bank Name:</b> Zenith Bank Plc</p>
+                <p><b>Account Name:</b> Consolidated Hallmark Insurance Plc</p>
+                <p><b>Account Number:</b> 1011219874</p><br>
+                <p>We thank you for your valued patronage</p>
+                <p> For: Consolidated Hallmark Ins. Plc</p>
+
+          
+            </div>
+
+
+
+        </div>
+
+        <p class="date">Date: 17-February-2020</p>
+
+
+        </div>
+
+    </body>
+</html>
