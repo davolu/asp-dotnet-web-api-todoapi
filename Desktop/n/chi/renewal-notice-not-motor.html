@@ -198,6 +198,7 @@ th{
       padding: 5px 10px 5px  5px;
       font-family: 'Segoe UI';
       color: #555;
+      font-size: 14px;
     }
     table.table-content tr th {
       padding-left: 10px;
@@ -254,7 +255,8 @@ th{
       box-sizing: border-box;
       background-image: linear-gradient(90deg, #fdfbfb 0%, #f7f7f7 100%);
     }
-    .profile-container .profile-header .image img {
+    .profile-container .profile-header .image img 
+    {
       vertical-align: middle;
     }
 
@@ -292,7 +294,32 @@ th{
                 font-family: 'Segoe UI';
                 color: #555;
                 
-            }   
+            }  
+            
+  .header-text > span{
+    font-size: 11px;
+    font-family: 'Segoe UI';
+} 
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}
+
+
         </style>
     </head>    
     <body>
@@ -300,28 +327,22 @@ th{
           <!-- Tittle -->
     <div class="tittle row" style="margin-top:6%;">
 
-        <div class="col-md-6" style="float: left; width: 50%; text-align: center;">
-         <a class="navbar-brand js-scroll-trigger" href="#page-top">
-  
-                <img src="img/chi-logo.png" style="width:250px;" />
-              </a>
-        </div>    
         
-        
+ 
+      <div class="col-md-12" style="float: left; width: 45%; margin-left:22%; text-align: center;">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+               <img src="img/logo-header-text.png" style="width:650px;" />
+             </a>
+       </div>    
        
-        <div class="col-md-6" style="float: left; width: 50%;  text-align: center;">
-             
-<!--        <p class="finep" style="margin-top:9%;">Motor Insurance Renewal Notice </p> -->
-        </div>    
-  
-  
-  
+         
+        
       </div>
   
 
       <div   class="container main" style="clear:both; padding:10px; margin-left:10%; margin-right:10%;">
   
-         <div id="header">
+         <div id="header" style="margin-left: 13%;">
             <div  class="small"><p class="bold">Head Office:</p></div>
             <div class="sub-header"> 
                 <p> 226, Ikorodu Road </p>
@@ -340,22 +361,21 @@ th{
         </div>    
 
         <div id="main">
-
-            <div id="container_1">
-                <div class="round">
+             <div id="container_1" >
+                <div class="round"  >
                     <h3>RENEWAL NOTICE LETTER</h3>
                 </div>
             </div>
 
-            <div id="container_2">
-                <div id="round_2">
+            <div id="container_2" >
+                <div id="round_2" style="margin-left: 15%;">
                    
                     <table class="table-content">
                         <tr>
                           <th>Insured name</th><td>SEA COACH BOAT COMPANY LIMITED<sup>-insured_name</sup></td>
                         </tr>
                         <tr>
-                          <th>Address:</th><td> BEACH ROAD, EBUTE IGA IKORODU, LAGOS<sup>-Address</sup></td>
+                          <th>Address</th><td> BEACH ROAD, EBUTE IGA IKORODU, LAGOS<sup>-Address</sup></td>
                         </tr>
                         <tr>
                           <th>Telephone No</th><td>08030871559<sup>-mobilephone/lindline</sup></td>
@@ -369,8 +389,9 @@ th{
                </div>
             </div>
 
-            <div id="container_3" style="margin-top:3%;">
-                <h3 style="margin-left:5%;">Dear Sir/Madam,</h3>
+            <div id="container_3"  style="margin-top:3%; margin-left: 10%;">
+
+                <h3 style="margin-left:7%;">Dear Sir/Madam,</h3>
                 <div style="margin-left: 2%;">
                 <p>We wish to inform you that this policy will be due for renewal on 08-February-2020 <sup>-renewal Date</sup></p>
                 <p>We shall be pleased to receive your instruction for renewal aliong with your remittance</p>
@@ -379,31 +400,46 @@ th{
                 </div>
             </div>
 
-            <div id="container_4">
-                <div class="cont_1">
-                    <p>CLASS OF BUSINESS:</p>
-                    <p>POLICY NUMBER:</p>
-                    <p>INSURANCE PERIOD:</p>
-                    <p>EXISTING SUM INSURED (100%):</p>
-                    <p>EXISTING GROSS PREMIUM (100%):</p>
-                    <p>PRO-RATA PREMIUM:</p>
-                    <p>AGENT/BROKER NAME:</p>
-                    <P>OUR PROPORTION:</P>
-                    <p>LEAD UNDERWRITER:</p>
-                </div>
-                <div class="cont_2">
-                    <p>MARINE HULL AND MACHINERY <sup>-Class_of_Business</sup></p>
-                    <p>45116124700001<sup>-policy_no</sup></p>
-                    <p>08-February-2019 <sup>-start_date</sup>  TO  07-February-2020<sup>-end_date</sup></p> 
-                    <p><span>&#8358;</span> 31,875,000.00 <sup>-Sum_insured</sup></p>
-                    <p><span>&#8358;</span> 339,989.53<sup>Gross_Premium</sup></p>
-                    <p><span>&#8358;</span>0000,000.00 <sup>-Pro-Rata Premium</sup></p>
-                    <p>OSE OLUYANWO</p>
-                    <p>100.00<sup>-prop</sup></p>
-                </div>
+            <div id="container_4"  style="margin-top:1%; margin-left: 14%;">
+               
+                <table class="table-content" style="width: 100%;">
+                    <tr>
+                      <th style="width:200px;">CLASS OF BUSINESS</th><td> <p>MARINE HULL AND MACHINERY <sup>-Class_of_Business</sup></p></td>
+                    </tr>
+                    <tr>
+                      <th>POLICY NUMBER</th><td>    <p>45116124700001<sup>-policy_no</sup></p></td>
+                    </tr>
+                    <tr>
+                      <th>INSURANCE PERIOD</th><td><p>08-February-2019 <sup>-start_date</sup>  TO  07-February-2020<sup>-end_date</sup></p> </td>
+                    </tr>
+                    <tr>
+                      <th>EXISTING SUM INSURED (100%)</th><td> <p><span>&#8358;</span> 31,875,000.00 <sup>-Sum_insured</sup></p></td>
+                    </tr>
+                    <tr>
+                      <th>EXISTING GROSS PREMIUM (100%)</th><td> <p><span>&#8358;</span> 339,989.53<sup>Gross_Premium</sup></p></td>
+                      </tr>
+                      <tr>
+                      <th>PRO-RATA PREMIUM</th><td><p><span>&#8358;</span>0000,000.00 <sup>-Pro-Rata Premium</sup></p></td>
+                      </tr>
+                      <tr>
+                      <th>AGENT/BROKER NAME</th><td> <p>OSE OLUYANWO</p></td>
+                      </tr>
+                      <tr>
+                      <th>OUR PROPORTION</th><td>  <p>100.00<sup>-prop</sup></p></td>
+                      </tr>
+                      <tr>
+                      <th>LEAD UNDERWRITER</th><td>EMMANUEL ODUSANYA<sup>-mkt_staff</sup></td>
+                      </tr>
+
+                       
+                    
+                  </table>
+
+
             </div>
 
-            <div id="container_5">
+            <div id="container_5" style="margin-top:25%;">
+                <div  style="margin-top:3%; margin-left: 14%;">
                 <p>If renewal is to be effected as a REVISED SUM INSURED please indicate the amount.</p>
                 <p> You may wish to send your cheque for the renewal premium to our office or pay into the below account:</p><br>
                 <p><b>Bank Name:</b> Zenith Bank Plc</p>
@@ -411,11 +447,11 @@ th{
                 <p><b>Account Number:</b> 1011219874</p><br>
                 <p>We thank you for your valued patronage</p>
                 <p> For: Consolidated Hallmark Ins. Plc</p>
-
+            </div>
           
             </div>
 
-
+ 
 
         </div>
 
